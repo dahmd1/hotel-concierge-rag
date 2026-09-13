@@ -1,0 +1,16 @@
+[project]
+name = "hotel-concierge-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Dalila", email = "dalila.ahemed@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-text-splitters>=1.1.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
