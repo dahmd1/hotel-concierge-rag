@@ -16,3 +16,8 @@ def chunk_pages(pages, chunk_size=500, chunk_overlap=100) -> pd.DataFrame:
 
     chunks = pd.DataFrame(rows)
     return chunks
+
+def filter_chunks(chunks: pd.DataFrame, min_words: int = 8) -> pd.DataFrame:
+    chunks = chunks[chunks["word_count"] >= min_words]
+    chunks = chunks.reset_index(drop=True)
+    return chunks 
